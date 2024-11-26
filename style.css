@@ -1,0 +1,188 @@
+*, *::before, *::after {
+    box-sizing: border-box;    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#logo {
+    position: relative;
+    width: 140px;
+    top: 2px;
+}
+
+nav button {
+    font-family: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #090909;
+    position: relative;
+    top: 0.5px;
+    border-bottom: 2px solid transparent;
+}
+
+nav button:hover {
+    border-bottom: 2px solid #090909;
+}
+
+#btn-home {
+    margin-right: 0.5rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-texts {
+    color: white;
+    padding: 0 1rem;
+    position: absolute;
+    top: 0;
+    font-size: 95%;
+}
+
+#hero-date {
+    font-size: 0.75rem;
+}
+
+#hero-desc {
+    line-height: 1.25;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#recent-posts {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+article {
+    padding: 15px;
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+}
+
+.article-img {
+    width: 100%;
+}
+
+.article-date {
+    font-size: 0.875rem;
+}
+
+.article-title {
+    color: #141414;
+    margin: 0;
+}
+
+.article-desc {
+    color: #505050;
+    line-height: 1.25;
+}
+
+footer {
+    background-color: #202020;
+    text-align: center;
+    line-height: 0.5;
+    padding: 1.5rem 0;
+    font-size: 0.75rem;
+}
+
+#footer-name {
+    color: #ECECEC;
+    font-weight: bold;
+}
+
+#footer-copyright {
+    color: #D7D7D7;
+}
+
+.about {
+    padding: 1rem;
+}
+
+#about-img {
+    width: 182px;
+    border-radius: 50%;
+}
+
+#about-subtitle {
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 350px) {
+    #hero-texts {
+        font-size: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    #logo {
+        width: 220px;
+    }
+    
+    nav button {
+        font-size: 1.2rem;
+    }
+    
+    #btn-home {
+        margin-right: 2.5rem;
+    }
+    
+    #hero-texts {
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        font-size: 100%;
+        max-width: 600px;
+    }
+
+    #hero-date {
+        font-size: 1.2rem;
+    }
+
+    #hero-desc {
+        line-height: 1.55;
+    }
+
+    main {
+        max-width: 80%;
+    }
+    
+    .articles {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    }
+    
+    footer {
+        font-size: 1rem;
+        line-height: 0.7;
+    }
+}
